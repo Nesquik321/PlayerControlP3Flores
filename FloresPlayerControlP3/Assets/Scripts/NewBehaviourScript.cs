@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 
 public class NewBehaviourScript : MonoBehaviour
@@ -16,5 +17,8 @@ public class NewBehaviourScript : MonoBehaviour
     void LateUpdate()
     {
         transform.position = player.transform.position + offset;
-    }
+        if (Input.GetKey(KeyCode.R))
+        {
+            
+        }
 }
